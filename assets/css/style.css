@@ -701,11 +701,11 @@ html, body{
 }
 
 #panel{
-  padding-top: 20px; padding-bottom: 20px; border: 2px solid white; background: black; width: 27rem; 
+  padding-top: 20px; padding-bottom: 20px; border-radius: 20px; background: black; width: 27rem; 
 }
 
 #outer{
- padding-top: 20px; padding-bottom: 20px; border: 2px solid white; background: black; width: 27rem; 
+ padding-top: 20px; padding-bottom: 20px;  border-radius: 20px; background: black; width: 27rem; 
 }
 
 @media (min-width: 350px) {
@@ -719,6 +719,9 @@ html, body{
     justify-content: center;
   }
 
+  #panel{
+    margin-bottom: 30px;
+  }
 
 
   #tree {
@@ -1019,6 +1022,9 @@ html, body{
 @media (min-width: 1200px) {
   #grid{
     justify-content: space-around;
+  }
+  #panel{
+    margin-bottom: 0px;
   }
 }
 
