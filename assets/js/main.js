@@ -69,7 +69,7 @@
         document.getElementById("indexBody").style.overflowY = "auto";
         document.getElementById("hero").style.overflowY = "scroll";
       });
-    }, 8);
+    }, 8000);
 
     /*  setTimeout(function () {
       $(".loader-wrapper").animate({ left: "250px" });
