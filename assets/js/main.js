@@ -214,11 +214,7 @@
     };
   }
 
-  var typer = document.getElementById("typewriter");
 
-  typewriter = setupTypewriter(typewriter);
-
-  typewriter.type();
 
   /**
    * Scrool with ofset on links with a class name .scrollto

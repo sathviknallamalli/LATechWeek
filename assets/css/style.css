@@ -390,6 +390,28 @@ h6 {
 }
 
 @font-face {
+  font-family: 'AG';
+  src: url('AG.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AGBold';
+  src: url('AGBold.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'AktivNormal';
+  src: url('AktivNormal.ttf') format('truetype');
+}
+
+@import url(//db.onlinewebfonts.com/c/43d6ccaa27abc1e5b2e10184b41c8d20?family=Aktiv+Grotesk);
+
+@font-face {font-family: "Aktiv Grotesk"; src: url("//db.onlinewebfonts.com/t/43d6ccaa27abc1e5b2e10184b41c8d20.eot"); src: url("//db.onlinewebfonts.com/t/43d6ccaa27abc1e5b2e10184b41c8d20.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/43d6ccaa27abc1e5b2e10184b41c8d20.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/43d6ccaa27abc1e5b2e10184b41c8d20.woff") format("woff"), url("//db.onlinewebfonts.com/t/43d6ccaa27abc1e5b2e10184b41c8d20.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/43d6ccaa27abc1e5b2e10184b41c8d20.svg#Aktiv Grotesk") format("svg"); }
+
+
+@font-face {
   font-family: 'AktivBold';
   src: url('AktivBold.ttf') format('truetype');
 }
@@ -722,6 +744,17 @@ html, body{
   margin-top: 20px;
 }
 
+.tweetGrid {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  border: 1px solid yellow;
+  flex-wrap: wrap;
+  gap: 3%;
+  justify-content: center;
+  margin: 8%;
+}
+
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 20%; /* IE10 */
@@ -746,6 +779,40 @@ html, body{
 
 
 }
+
+.tweetCol{
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width: 30%;
+  height: 100%;
+  border: 1px solid blue;
+
+  justify-content: space-around;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.twitProfPic{
+  width: 40px; height: 40px; border-radius:50%;
+}
+
+.twitCard{
+  background: black; display: flex; flex-direction: column; padding: 20px; align-items: flex-start;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.3); border: none;
+}
+
+.twitName{
+  margin-top: 20px; color: white; font-family: AGBold; font-size: 16px;
+}
+
+.twitText{
+  margin-top: 10px; color: white; font-family: AG; font-size: 16px;
+}
+
+.card{
+  border: none;
+}
+
 
 @media screen and (min-width: 1400px) {
   .rowMain{
@@ -774,6 +841,58 @@ html, body{
   }
 }
 
+.flex-container {
+  display: flex;
+  border: 1px solid white;
+  flex-direction: row;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.flex-item-left {
+  flex: 60%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  flex: 40%;
+}
+
+.yamo{
+  border: 1px solid white; 
+  flex-direction: row;
+  width: 80%;
+}
+
+#ny{
+  width: 40%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media (max-width: 1005px) {
+  .yamo {
+    flex-direction: column;
+  }
+  #ny{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .yamo {
+    width: 70%
+  }
+  
+}
+
+@media (min-width: 1500px) {
+  .yamo {
+    width: 60%
+  }
+  
+}
+
 @media (min-width: 350px) {
   #rocket {
     margin-top: 20%;
@@ -793,6 +912,13 @@ html, body{
     height: 40rem;
   }
 
+  #headertext{
+    font-size: 50px;
+  }
+
+  #newstext{
+    font-size: 20px;
+  }
 
   #tree {
     margin-top: 60%;
@@ -803,7 +929,7 @@ html, body{
   }
 
   #date {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   #countButton,
@@ -812,7 +938,7 @@ html, body{
   }
 
   #brought {
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .myimg {
@@ -856,10 +982,6 @@ html, body{
     font-size: 20px;
   }
 
-  #brought {
-    font-size: 15px;
-  }
-
   .myimg {
     width: 100%;
   }
@@ -894,9 +1016,6 @@ html, body{
     font-size: 20px;
   }
 
-  #brought {
-    font-size: 15px;
-  }
 
   .myimg {
     width: 100%;
@@ -957,7 +1076,7 @@ html, body{
   }
 
   #brought {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .myimg {
@@ -993,9 +1112,6 @@ html, body{
     font-size: 25px;
   }
 
-  #brought {
-    font-size: 20px;
-  }
 
   .myimg {
     width: 90%;
@@ -1036,9 +1152,6 @@ html, body{
     font-size: 25px;
   }
 
-  #brought {
-    font-size: 20px;
-  }
 
   .myimg {
     width: 90%;
@@ -1080,7 +1193,7 @@ html, body{
   }
 
   #brought {
-    font-size: 15px;
+    font-size: 30px;
   }
 
   .myimg {
@@ -1141,7 +1254,7 @@ html, body{
   }
 
   #mainCont {
-    margin-top: -50%;
+    margin-top: -47%;
   }
 
   .myimg {
@@ -1243,7 +1356,7 @@ html, body{
   }
 
   #brought {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .myimg {
@@ -1289,9 +1402,6 @@ html, body{
     font-size: 35px;
   }
 
-  #brought {
-    font-size: 30px;
-  }
 
   .myimg {
     width: 70%;
@@ -1558,6 +1668,7 @@ overflow-y: hidden;
   letter-spacing: 1px;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
   background: black;
